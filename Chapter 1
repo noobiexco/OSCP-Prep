@@ -1,0 +1,43 @@
+\\ for commands
+++ for results
+
+update kali db to allow for faster find, locate and which command results:
+\\updatedb
+\\locate example.exe
+
+the which command searches through the directories that are defined in the $PATH enviornment variable for a given filename. If a match is found, which returns the full path to the file as shown below
+\\which sbd
+
+find is able to recursively search any given path for various files.
+\\find /-name example*
+
+starting a service:
+\\service ssh start
+
+very that service is running and listening on TCP port:
+\\netstat -antp 
+\\netstat -antp|grep sshd
+
+using wget to pull a page
+\\wget www.example.com
+
+push a command output to a file
+\\wget www.example.com > example.html
+
+grep for all lines in a file that contain a string
+\\grep "href=" example.html
+
+using delimiters to clean output
+\\grep "href=" example.html | cut -d "/" -f 3
+used the cut command, -d = delimiter, used / as the delimiter, -f selects the third field once delimited
+
+example of all cleaned urls from a wget
+\\grep "href=" example.html | cut -d "/" -f 3 | grep "\." | cut -d '"' -f 1 | sort -u
+\\cat example.html | grep -o 'http://[^"]*' | cut -d "/" -f 3 | sort -u > list.txt
+
+running commands on the list
+\\ for url in $(cat list.txt); do host $url; done
+
+pull the ip addresses from the host command
+\\ for url in $cat list.txt ); do host $url; done | grep "has address" | cut -d " " -f 4 | sort -u
+
