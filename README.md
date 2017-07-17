@@ -28,20 +28,20 @@ Webgoat guide
 
 
 Vulnhub vm's: 
-Kioptix level 1	
-Kioptix level 2	
-Kioptix2014	
-KioptixVM3	
-pWnOS v2.0	
-SickOS 1	
-SickOS 1.2	
-Stapler	
-Tr0ll	
-Tr0ll2	
-Vulnix	
-VulnOSv2	
-FristiLeaks 1.3	
-LordOfTheRoot 1.0.1	
-mrRobot	
-pwnlab_init	
+-Kioptix level 1	
+-Kioptix level 2	
+-Kioptix2014	
+-KioptixVM3	
+-pWnOS v2.0	
+-SickOS 1	
+-SickOS 1.2	
+-Stapler	
+-Tr0ll	
+-Tr0ll2	
+-Vulnix	
+-VulnOSv2	
+-FristiLeaks 1.3	
+-LordOfTheRoot 1.0.1	
+-mrRobot	
+-pwnlab_init	
 
