@@ -8,30 +8,30 @@ Github to store notes and code for OSCP.
 No spoilers.
 
 Plans:
-[ ] Work though textbook and pull useful commands {current = page 50}
-[ ] Watch videos {current = vid 68}
-[ ] Clean up git, box code
-[ ] Create an xss/other injection list
-[ ] Create Resources: web shells, image uploads, other test files, scripts
-[ ] Work though pentesterlabs
+- [ ] Work though textbook and pull useful commands {current = page 50}
+- [ ] Watch videos {current = vid 68}
+- [ ] Clean up git, box code
+- [ ] Create an xss/other injection list
+- [ ] Create Resources: web shells, image uploads, other test files, scripts
+- [ ] Work though pentesterlabs
     - Download all ISO's/Course guides
     - Yellow Badge
     - CTF Badge
     - Other
-[ ] Create CTF challenges {due date 1st Aug}
+- [ ] Create CTF challenges {due date 1st Aug}
     - create page detailing challenge ideas
     - reserved space
-[ ] Create guides for picoctf 2017
+- [ ] Create guides for picoctf 2017
     - Text guides
     - Github Writeups
     - Videos
     - Upload to [CTF Time](ctftime.org)
-[ ] CSAW CTF 2017 {September 16/17th}
+- [ ] CSAW CTF 2017 {September 16/17th}
 
-[ ] Webgoat guide
+- [ ] Webgoat guide
 
 
-[ ] Vulnhub vm's: 
+- [ ] Vulnhub vm's: 
 - Kioptix level 1	
 - Kioptix level 2	
 - Kioptix2014	
