@@ -25,7 +25,7 @@ Plans:
     - Text guides
     - Github Writeups
     - Videos
-    - Upload to [CTF Time](ctftime.org)
+    - Upload to [CTF Time](www.ctftime.org)
 - [ ] CSAW CTF 2017 {September 16/17th}
 
 - [ ] Webgoat guide
